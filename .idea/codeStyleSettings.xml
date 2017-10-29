@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectCodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS">
+      <value>
+        <JSCodeStyleSettings>
+          <option name="ALIGN_OBJECT_PROPERTIES" value="1" />
+          <option name="ALIGN_VAR_STATEMENTS" value="2" />
+          <option name="REFORMAT_C_STYLE_COMMENTS" value="true" />
+          <option name="SPACES_WITHIN_IMPORTS" value="true" />
+        </JSCodeStyleSettings>
+        <MarkdownNavigatorCodeStyleSettings>
+          <option name="RIGHT_MARGIN" value="72" />
+        </MarkdownNavigatorCodeStyleSettings>
+        <SqlCodeStyleSettings>
+          <option name="NEW_LINE_BEFORE_JOIN_CONDITION" value="true" />
+          <option name="NEW_LINE_BEFORE_COMMA" value="true" />
+          <option name="NEW_LINE_BEFORE_QUERY_INSIDE_PARENTHESIS" value="true" />
+          <option name="NEW_LINE_BEFORE_QUERY_INSIDE_DML" value="true" />
+          <option name="NEW_LINE_AROUND_SEMICOLON" value="true" />
+          <option name="INDENT_SELECT_INTO_CLAUSE" value="true" />
+        </SqlCodeStyleSettings>
+        <codeStyleSettings language="JavaScript">
+          <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
+          <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
+          <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+          <option name="ALIGN_MULTILINE_EXTENDS_LIST" value="true" />
+          <option name="ALIGN_MULTILINE_ARRAY_INITIALIZER_EXPRESSION" value="true" />
+          <option name="METHOD_CALL_CHAIN_WRAP" value="5" />
+          <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
+          <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+          <option name="IF_BRACE_FORCE" value="3" />
+          <option name="DOWHILE_BRACE_FORCE" value="3" />
+          <option name="WHILE_BRACE_FORCE" value="3" />
+          <option name="FOR_BRACE_FORCE" value="3" />
+        </codeStyleSettings>
+        <codeStyleSettings language="ruby">
+          <option name="INDENT_WHEN_CASES" value="false" />
+          <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
+          <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+          <indentOptions>
+            <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          </indentOptions>
+        </codeStyleSettings>
+      </value>
+    </option>
+    <option name="USE_PER_PROJECT_SETTINGS" value="true" />
+  </component>
+</project>
