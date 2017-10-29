@@ -27,6 +27,24 @@ services:
     volumes:
       - mysql57:/var/lib/mysql
 
+  mysql57-src:
+    <<: *mysql57
+    ports:
+      - "33070:3306"
+    volumes:
+      - src:/var/lib/mysql
+
+  mysql57-slave:
+    <<: *mysql57
+    ports:
+      - "33079:3306"
+    links:
+      - mysql57
+      - mysql57-src
+    volumes:
+      - rep:/var/lib/mysql
+      - ./mysql/crash_safe.cnf:/etc/mysql/conf.d/crash_safe.cnf
+
   mysql80:
     <<: *mysql
     image: mysql:8.0
@@ -38,4 +56,6 @@ services:
 volumes:
   mysql56:
   mysql57:
+  src:
+  rep:
   mysql80:
