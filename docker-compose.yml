@@ -1,0 +1,41 @@
+version: '3.3'
+
+services:
+
+  _mysql: &mysql
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: intro
+    ports:
+      - "3306:3306"
+    volumes:
+      - /var/lib/mysql
+
+  mysql56:
+    <<: *mysql
+    image: mysql:5.6
+    ports:
+      - "33066:3306"
+    volumes:
+      - mysql56:/var/lib/mysql
+
+  mysql57: &mysql57
+    <<: *mysql
+    image: mysql:5.7
+    ports:
+      - "33067:3306"
+    volumes:
+      - mysql57:/var/lib/mysql
+
+  mysql80:
+    <<: *mysql
+    image: mysql:8.0
+    ports:
+      - "33068:3306"
+    volumes:
+      - mysql80:/var/lib/mysql
+
+volumes:
+  mysql56:
+  mysql57:
+  mysql80:
