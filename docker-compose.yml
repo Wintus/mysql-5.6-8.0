@@ -26,6 +26,7 @@ services:
       - "33067:3306"
     volumes:
       - mysql57:/var/lib/mysql
+      - ./mysql/5.7/master1.cnf:/etc/mysql/conf.d/master1.cnf
 
   mysql57-src:
     <<: *mysql57
@@ -33,6 +34,7 @@ services:
       - "33070:3306"
     volumes:
       - src:/var/lib/mysql
+      - ./mysql/5.7/master2.cnf:/etc/mysql/conf.d/master2.cnf
 
   mysql57-slave:
     <<: *mysql57
@@ -43,7 +45,7 @@ services:
       - mysql57-src
     volumes:
       - rep:/var/lib/mysql
-      - ./mysql/crash_safe.cnf:/etc/mysql/conf.d/crash_safe.cnf
+      - ./mysql/5.7/slave.cnf:/etc/mysql/conf.d/slave.cnf
 
   mysql80:
     <<: *mysql

@@ -1,0 +1,5 @@
+[mysqld]
+server-id = 20001
+
+master_info_repository = TABLE
+relay_log_info_repository = TABLE
